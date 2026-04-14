@@ -6,13 +6,14 @@ export function Profile() {
 
     return (
         <div className="relative min-h-screen bg-[#EDF1F6] pb-32">
-            {/* Fondo Superior */}
+
+            {/* fondo mascotas*/}
             <div className="absolute top-0 left-0 w-full h-[300px] z-0 overflow-hidden">
                 <img src="/fondo-mascotas.svg" className="w-full h-full object-cover" alt="fondo" />
                 <div className="absolute top-0 left-0 w-full h-[300px] bg-[#32ACDC] opacity-20 mix-blend-multiply" />
             </div>
 
-            {/* Header / Logout */}
+            {/* boton de salir */}
             <div className="relative z-20 pt-5 px-6 flex flex-col items-center">
                 <div className="w-full flex justify-end">
                     <button
@@ -23,7 +24,7 @@ export function Profile() {
                     </button>
                 </div>
 
-                {/* Foto de Perfil */}
+                {/* foto de perfil y nombre de usuario */}
                 <div className="relative mt-2">
                     <div className="w-28 h-28 bg-white rounded-full p-1 shadow-2xl border-4 border-white overflow-hidden">
                         <img
@@ -44,7 +45,7 @@ export function Profile() {
                 </p>
             </div>
 
-            {/* Información del Perfil */}
+            {/* info de la cuenta */}
             <main className="relative z-30 mx-6 mt-8 bg-white rounded-[30px] p-8 shadow-2xl border border-white mt-[15px]">
                 <div className="flex items-center justify-between mb-8">
                     <h1 className="text-[#F29455] text-[24px] font-bold text-center mb-6 mt-[-10px]">Mi Cuenta</h1>
@@ -54,7 +55,7 @@ export function Profile() {
                 </div>
 
                 <div className="space-y-7">
-                    {/* Dato: Correo */}
+                    {/* datos personales */}
                     <div className="flex items-center gap-5 px-2 mt-[-35px]">
                         <Mail className="text-[#43A3F1] shrink-0" size={20} />
                         <div className="flex flex-col">
@@ -63,7 +64,6 @@ export function Profile() {
                         </div>
                     </div>
 
-                    {/* Dato: Teléfono */}
                     <div className="flex items-center gap-5 px-2">
                         <Phone className="text-[#43A3F1] shrink-0" size={20} />
                         <div className="flex flex-col">
@@ -72,7 +72,6 @@ export function Profile() {
                         </div>
                     </div>
 
-                    {/* Dato: Ubicación */}
                     <div className="flex items-center gap-5 px-2 pb-2">
                         <MapPin className="text-[#43A3F1] shrink-0" size={20} />
                         <div className="flex flex-col">
@@ -81,7 +80,7 @@ export function Profile() {
                         </div>
                     </div>
 
-                    {/* Sección de Mascotas en Recuadro */}
+                    {/* acceso a mascotas */}
                     <div className="bg-[#F8FAFC] p-2 rounded-[20px] border border-gray-200 shadow-2xl">
                         <button className="w-full flex items-center justify-between group active:scale-[0.98] transition-all">
                             <div className="flex items-center gap-4">

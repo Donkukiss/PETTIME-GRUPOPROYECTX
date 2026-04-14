@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export function History() {
     const navigate = useNavigate();
 
-    // Datos simulados (Mock Data) para la presentación
+    // datos de prueba historial
     const historyData = [
         {
             title: "Paseos",
@@ -43,13 +43,14 @@ export function History() {
 
     return (
         <div className="relative min-h-screen bg-[#EDF1F6] pb-32">
-            {/* Fondo Superior */}
+
+            {/* fondo mascotas*/}
             <div className="absolute top-0 left-0 w-full h-[300px] z-0 overflow-hidden">
                 <img src="/public/fondo-mascotas.svg" className="w-full h-full object-cover" alt="fondo" />
                 <div className="absolute top-0 left-0 w-full h-[300px] bg-[#96C268] opacity-20 mix-blend-multiply" />
             </div>
 
-            {/* Header */}
+            {/* logo y logout */}
             <div className="relative z-20 pt-5 px-6 flex flex-col items-center">
                 <div className="w-full flex justify-end">
                     <LogOut className="text-white rotate-180 cursor-pointer" size={28} />
@@ -59,7 +60,7 @@ export function History() {
                 </div>
             </div>
 
-            {/* Contenedor del Historial */}
+            {/* lista de tarjetas del historial */}
             <main className="relative z-30 mx-6 mt-6 bg-white rounded-[20px] p-6 shadow-2xl min-h-[500px]">
                 <h1 className="text-[#F29455] text-[24px] font-bold text-center mb-6 mt-[-10px]">Historial</h1>
 
@@ -69,7 +70,7 @@ export function History() {
                     ))}
                 </div>
 
-                {/* Botón Nuevo Servicio */}
+                {/* boton nuevoservicio */}
                 <button
                     onClick={() => navigate("/services")}
                     className="w-full mt-4 bg-[#43A3F1] text-white font-bold py-4 rounded-[100px] shadow-lg active:scale-95 transition-all text-sm tracking-wide mt-[60px]"
